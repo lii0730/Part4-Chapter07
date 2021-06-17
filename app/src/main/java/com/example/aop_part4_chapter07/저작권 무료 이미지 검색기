@@ -1,0 +1,22 @@
+<저작권 무료 이미지 검색기>
+
+- Unsplash API 활용
+
+- 초기화면
+1. 검색창
+2. 리사이클러뷰 -> 랜덤하게
+              -> swipe -> 랜덤하게 리프레쉬
+3. 단어를 검색 -> 키워드에 맞는 이미지
+4. 사진 클릭 -> 저장 다이얼로그 -> 저장하면 스낵바 -> 배경화면 지정 버튼 ->
+폰 배경화면으로 설정
+
+API로부터 사진 가져오기
+검색 사진 다운받기
+사진 배경화면 설정하기
+Loading Shimmer를 볼 수 있다.
+
+- Retrofit2
+- Coroutine
+- Glide
+- ShimmerLayout -> Loading Shimmer (뺑뺑이)
+- WallpaperManager -> 배경화면 지정
