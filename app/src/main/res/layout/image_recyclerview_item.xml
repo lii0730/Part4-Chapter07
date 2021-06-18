@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_margin="10dp">
+
+	<ImageView
+		android:id="@+id/item_imageView"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_gravity="center"
+		android:scaleType="centerCrop"
+		tools:src="@drawable/background" />
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom"
+		android:layout_margin="3dp">
+
+		<ImageView
+			android:id="@+id/userProfileImageView"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="5dp"
+			app:backgroundTint="@color/white"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/userNameTextView"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:src="@drawable/ic_baseline_search_24" />
+
+		<TextView
+			android:id="@+id/userNameTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:textColor="@color/white"
+			app:layout_constraintBottom_toTopOf="@+id/userLocationTextView"
+			app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:text="Jarritos Mexican Soda" />
+
+		<TextView
+			android:id="@+id/userLocationTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:textColor="@color/white_60"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
+			app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
+			tools:text="Seattle, WA" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
