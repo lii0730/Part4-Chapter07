@@ -9,7 +9,7 @@
 	<ImageView
 		android:id="@+id/item_imageView"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent"
+		android:layout_height="wrap_content"
 		android:layout_gravity="center"
 		android:scaleType="centerCrop"
 		tools:src="@drawable/background" />
@@ -36,23 +36,27 @@
 			android:id="@+id/userNameTextView"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
+			android:layout_marginLeft="10dp"
 			android:textColor="@color/white"
-			app:layout_constraintBottom_toTopOf="@+id/userLocationTextView"
+			app:layout_constraintBottom_toTopOf="@+id/descriptionTextView"
 			app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
-			app:layout_constraintTop_toTopOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/userProfileImageView"
 			tools:text="Jarritos Mexican Soda" />
 
 		<TextView
-			android:id="@+id/userLocationTextView"
-			android:layout_width="wrap_content"
+			android:id="@+id/descriptionTextView"
+			android:layout_width="0dp"
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="5dp"
+			android:ellipsize="end"
+			android:maxLines="1"
 			android:textColor="@color/white_60"
-			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/userNameTextView"
+			app:layout_constraintEnd_toEndOf="@+id/userNameTextView"
+			app:layout_constraintBottom_toBottomOf="@+id/userProfileImageView"
 			app:layout_constraintStart_toEndOf="@+id/userProfileImageView"
 			app:layout_constraintTop_toBottomOf="@+id/userNameTextView"
-			tools:text="Seattle, WA" />
+			tools:text="Seattle, WA"
+			tools:visibility="visible" />
 
 	</androidx.constraintlayout.widget.ConstraintLayout>
 
