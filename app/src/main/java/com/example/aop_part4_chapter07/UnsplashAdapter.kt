@@ -33,7 +33,7 @@ class UnsplashAdapter(val onClicked: (SearchResponseItem) -> Unit) : ListAdapter
 		}
 
 		fun bind(item: SearchResponseItem?) {
-			item?.let { item->
+			item?.let { item ->
 				Glide.with(item_imageView)
 					.load(item.urls?.regular)
 					.thumbnail(

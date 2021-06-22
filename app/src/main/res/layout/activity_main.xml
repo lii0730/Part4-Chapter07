@@ -46,6 +46,20 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <TextView
+                android:id="@+id/errorMessageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:drawableTop="@drawable/ic_baseline_refresh_24"
+                android:drawablePadding="6dp"
+                android:layout_marginTop="80dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="에러가 발생하였습니다.\n 아래로 당겨주세요"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/imageRecyclerView"
                 tools:listitem="@layout/image_recyclerview_item"
